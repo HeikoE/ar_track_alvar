@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <!--- Sim Time -->
+    <param name="/use_sim_time" value="false" />
+
+    <node pkg="rosbag" type="play" name="rosbag_play" output="screen"
+           args="--pause --clock -r 5.0 -l
+
+        /home/heiko/rosbags/marker_images.bag">
+
+    </node>
+
+</launch>
